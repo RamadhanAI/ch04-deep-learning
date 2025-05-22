@@ -5,7 +5,6 @@ This repo includes:
 - Vision and NLP projects
 - Deployment with FastAPI
 - GradCAM & SHAP explanations
-# 🧠 Chapter 4: Deep Learning with TensorFlow & PyTorch
 
 Train and deploy deep learning models with real-world architectures (CNN, DistilBERT), interpretability (GradCAM), and production APIs.
 
