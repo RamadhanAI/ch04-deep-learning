@@ -1,4 +1,5 @@
 # Chapter 4: Deep Learning with TensorFlow & PyTorch
+this repository contains the full code and notebooks to build, train, and deploy deep learning models covering CNNs, RNNs, and Transformers for real-world AI tasks.
 
 This repo includes:
 - CNN and Transformer models
@@ -21,3 +22,29 @@ Train and deploy deep learning models with real-world architectures (CNN, Distil
 - `deployment/`: FastAPI for serving models
 - `Dockerfile`: Containerized deployment
 - `requirements.txt`: All dependencies
+
+Setup Instructions
+Clone the repo:
+git clone https://github.com/RamadhanAI/ch04-deep-learning.git
+cd ch04-deep-learning
+Create and activate a virtual environment:
+python3 -m venv venv
+source venv/bin/activate
+Install dependencies:
+pip install -r requirements.txt
+Contents
+ch04_cnn_baseline.ipynb: CNN training and evaluation on MNIST-C
+ch04_ticket_distilbert.ipynb: DistilBERT fine-tuning for ticket triage
+gradcam.py: Utilities for CNN interpretability visualization
+deploy.py: Example FastAPI server for model inference
+Running Notebooks
+Open notebooks in Google Colab or locally to train models and visualize results.
+
+Deployment
+Use deploy.py to launch a FastAPI inference server:
+
+uvicorn deploy:app --reload
+Troubleshooting
+Ensure CUDA and drivers are compatible for GPU acceleration.
+Use pip install --upgrade if dependencies fail.
+Report issues in the GitHub repo issues tab.
